@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AI Trends ID - Send questions, suggestions, or collaboration requests through this contact page.">
+    <meta name="keywords" content="contact, AI Trends ID, collaboration, feedback">
+    <meta name="author" content="AI Trends ID">
+    <title>Contact Us | AI Trends ID</title>
+
+    <!-- Tempel Script Google AdSense di sini -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        'neon-blue': '#00d4ff',
+                        'neon-purple': '#a855f7',
+                        'base': '#050510',
+                        'card': '#0d0d1f',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-base text-slate-300 font-sans antialiased">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="glass-nav max-w-6xl mx-auto mt-4 flex items-center justify-between px-6 py-3 rounded-2xl mx-4 lg:mx-auto">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-neon-blue shadow-glow-blue"></span>
+                <span class="font-display text-lg font-bold text-white tracking-tight">
+                    AI <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">Trends ID</span>
+                </span>
+            </a>
+
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="index.html" class="text-slate-300 hover:text-neon-blue transition-colors">Home</a></li>
+                <li><a href="index.html" class="text-slate-300 hover:text-neon-blue transition-colors">AI Tools</a></li>
+                <li><a href="index.html" class="text-slate-300 hover:text-neon-blue transition-colors">Prompt Tutorial</a></li>
+                <li><a href="about.html" class="text-slate-300 hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="contact.html" class="text-white hover:text-neon-blue transition-colors">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white" aria-label="Open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="glass-nav hidden md:hidden max-w-6xl mx-4 mt-2 rounded-2xl p-4">
+            <ul class="flex flex-col gap-3 text-sm font-medium">
+                <li><a href="index.html" class="block text-slate-300 hover:text-neon-blue transition-colors">Home</a></li>
+                <li><a href="index.html" class="block text-slate-300 hover:text-neon-blue transition-colors">AI Tools</a></li>
+                <li><a href="index.html" class="block text-slate-300 hover:text-neon-blue transition-colors">Prompt Tutorial</a></li>
+                <li><a href="about.html" class="block text-slate-300 hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="contact.html" class="block text-white hover:text-neon-blue transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="relative overflow-hidden pt-36 pb-20 px-6">
+        <!-- Glow background effects -->
+        <div class="absolute top-0 -right-32 w-96 h-96 bg-neon-blue/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 -left-32 w-96 h-96 bg-neon-purple/20 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-3xl mx-auto">
+            <!-- Page Header -->
+            <div class="text-center mb-14">
+                <span class="inline-block glass px-4 py-1.5 rounded-full text-xs font-medium text-neon-blue border border-neon-blue/30">
+                    &#9993; Contact Us
+                </span>
+                <h1 class="font-display mt-6 text-4xl md:text-5xl font-bold text-white leading-tight">
+                    Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">Touch</span>
+                </h1>
+                <p class="mt-5 text-slate-400 leading-relaxed">
+                    Have a question, suggestion, or want to collaborate? Fill out the form below
+                    and we will do our best to get back to you as soon as possible.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-5 gap-8">
+
+                <!-- ================= CONTACT FORM ================= -->
+                <section class="glass-card rounded-2xl p-8 md:col-span-3">
+                    <h2 class="font-display text-xl font-bold text-white">Send a Message</h2>
+                    <form id="form-kontak" class="mt-6 space-y-5" action="#" method="post">
+
+                        <div>
+                            <label for="nama" class="block text-sm font-medium text-slate-400 mb-2">Full Name</label>
+                            <input type="text" id="nama" name="nama" placeholder="Enter your name" class="input-glass" required>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="name@email.com" class="input-glass" required>
+                        </div>
+
+                        <div>
+                            <label for="subjek" class="block text-sm font-medium text-slate-400 mb-2">Subject</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="e.g. Collaboration / Question" class="input-glass">
+                        </div>
+
+                        <div>
+                            <label for="pesan" class="block text-sm font-medium text-slate-400 mb-2">Message</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Type your message here..." class="input-glass" required></textarea>
+                        </div>
+
+                        <button type="submit"
+                                class="w-full py-3 rounded-xl font-semibold text-base bg-gradient-to-r from-neon-blue to-neon-purple text-white shadow-glow-blue hover:opacity-90 transition-opacity">
+                            Send Message
+                        </button>
+
+                        <p id="pesan-berhasil" class="hidden text-sm text-center text-emerald-400">
+                            &#10004; Thank you! Your message has been sent.
+                        </p>
+                    </form>
+                </section>
+
+                <!-- ================= CONTACT INFORMATION ================= -->
+                <aside class="md:col-span-2 space-y-6">
+                    <section class="glass-card rounded-2xl p-8">
+                        <h2 class="font-display text-xl font-bold text-white">Contact Information</h2>
+                        <ul class="mt-6 space-y-5 text-sm">
+                            <li class="flex items-start gap-4">
+                                <span class="w-10 h-10 rounded-xl bg-neon-blue/10 border border-neon-blue/20 flex items-center justify-center text-neon-blue shrink-0">
+                                    &#9993;
+                                </span>
+                                <div>
+                                    <p class="font-semibold text-white">Email</p>
+                                    <a href="mailto:kontak@aitrendsid.com" class="text-slate-400 hover:text-neon-blue transition-colors">
+                                        kontak@aitrendsid.com
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="w-10 h-10 rounded-xl bg-neon-purple/10 border border-neon-purple/20 flex items-center justify-center text-neon-purple shrink-0">
+                                    &#128205;
+                                </span>
+                                <div>
+                                    <p class="font-semibold text-white">Location</p>
+                                    <p class="text-slate-400">Indonesia</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="w-10 h-10 rounded-xl bg-neon-blue/10 border border-neon-blue/20 flex items-center justify-center text-neon-blue shrink-0">
+                                    &#9200;
+                                </span>
+                                <div>
+                                    <p class="font-semibold text-white">Response Time</p>
+                                    <p class="text-slate-400">1 - 3 business days</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="glass-card rounded-2xl p-8">
+                        <h2 class="font-display text-xl font-bold text-white">Follow Us</h2>
+                        <div class="mt-5 flex items-center gap-3">
+                            <a href="#" class="px-4 py-2 rounded-lg border border-white/10 text-sm text-slate-300 hover:border-neon-blue hover:text-neon-blue transition-colors">Facebook</a>
+                            <a href="#" class="px-4 py-2 rounded-lg border border-white/10 text-sm text-slate-300 hover:border-neon-blue hover:text-neon-blue transition-colors">Twitter / X</a>
+                            <a href="#" class="px-4 py-2 rounded-lg border border-white/10 text-sm text-slate-300 hover:border-neon-blue hover:text-neon-blue transition-colors">Instagram</a>
+                        </div>
+                    </section>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-white/10 mt-10">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-slate-500">
+                &copy; <span id="tahun"></span> AI Trends ID. All rights reserved.
+            </p>
+            <ul class="flex flex-wrap items-center justify-center gap-5 text-sm text-slate-400">
+                <li><a href="about.html" class="hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="contact.html" class="hover:text-neon-blue transition-colors">Contact</a></li>
+                <li><a href="privacy-policy.html" class="hover:text-neon-blue transition-colors">Privacy Policy</a></li>
+                <li><a href="disclaimer.html" class="hover:text-neon-blue transition-colors">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Interaction Script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

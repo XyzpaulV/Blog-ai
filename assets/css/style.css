@@ -1,0 +1,114 @@
+/* =========================================================
+   AI Trends ID - Custom Stylesheet
+   Dark Mode + Glassmorphism + Neon Accent
+   ========================================================= */
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #050510;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00d4ff, #a855f7);
+    border-radius: 99px;
+}
+
+/* ---------- Text Selection ---------- */
+::selection {
+    background: rgba(0, 212, 255, 0.3);
+    color: #ffffff;
+}
+
+/* ---------- Glassmorphism Navbar ---------- */
+.glass-nav {
+    background: rgba(13, 13, 31, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------- Glassmorphism Card ---------- */
+.glass-card {
+    background: rgba(13, 13, 31, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 212, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.15);
+}
+
+/* ---------- Neon Glow ---------- */
+.shadow-glow-blue {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+/* ---------- Typografi Konten Artikel ---------- */
+.artikel-konten {
+    line-height: 1.9;
+}
+.artikel-konten p {
+    margin-bottom: 1.5rem;
+    color: #cbd5e1;
+}
+.artikel-konten h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.artikel-konten h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+.artikel-konten strong {
+    color: #00d4ff;
+}
+.artikel-konten ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #cbd5e1;
+}
+.artikel-konten ul li {
+    margin-bottom: 0.5rem;
+}
+.artikel-konten blockquote {
+    border-left: 4px solid #00d4ff;
+    background: rgba(0, 212, 255, 0.05);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    color: #e2e8f0;
+    font-style: italic;
+}
+
+/* ---------- Form Contact ---------- */
+.input-glass {
+    width: 100%;
+    background: rgba(13, 13, 31, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.input-glass:focus {
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
+}
+.input-glass::placeholder {
+    color: #64748b;
+}

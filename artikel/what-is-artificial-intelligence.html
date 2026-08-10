@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is artificial intelligence? A simple, beginner-friendly guide explaining AI in plain language with real-world examples.">
+    <meta name="keywords" content="what is AI, artificial intelligence explained, AI for beginners, machine learning basics">
+    <meta name="author" content="AI Trends ID">
+    <title>What Is Artificial Intelligence? A Simple Guide for Beginners | AI Trends ID</title>
+
+    <!-- Tempel Script Google AdSense di sini -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        'neon-blue': '#00d4ff',
+                        'neon-purple': '#a855f7',
+                        'base': '#050510',
+                        'card': '#0d0d1f',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS Kustom -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="bg-base text-slate-300 font-sans antialiased">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="glass-nav max-w-6xl mx-auto mt-4 flex items-center justify-between px-6 py-3 rounded-2xl mx-4 lg:mx-auto">
+            <a href="../index.html" class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-neon-blue shadow-glow-blue"></span>
+                <span class="font-display text-lg font-bold text-white tracking-tight">
+                    AI <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">Trends ID</span>
+                </span>
+            </a>
+            <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <li><a href="../index.html" class="text-slate-300 hover:text-neon-blue transition-colors">Home</a></li>
+                <li><a href="../index.html" class="text-slate-300 hover:text-neon-blue transition-colors">AI Tools</a></li>
+                <li><a href="../index.html" class="text-slate-300 hover:text-neon-blue transition-colors">Prompt Tutorial</a></li>
+                <li><a href="../about.html" class="text-slate-300 hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="../contact.html" class="text-slate-300 hover:text-neon-blue transition-colors">Contact</a></li>
+            </ul>
+            <button id="menu-toggle" class="md:hidden text-white" aria-label="Buka menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="glass-nav hidden md:hidden max-w-6xl mx-4 mt-2 rounded-2xl p-4">
+            <ul class="flex flex-col gap-3 text-sm font-medium">
+                <li><a href="../index.html" class="block text-slate-300 hover:text-neon-blue transition-colors">Home</a></li>
+                <li><a href="../index.html" class="block text-slate-300 hover:text-neon-blue transition-colors">AI Tools</a></li>
+                <li><a href="../index.html" class="block text-slate-300 hover:text-neon-blue transition-colors">Prompt Tutorial</a></li>
+                <li><a href="../about.html" class="block text-slate-300 hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="../contact.html" class="block text-slate-300 hover:text-neon-blue transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 pt-36 pb-20">
+
+        <!-- ================= HEADER ARTIKEL ================= -->
+        <header class="mb-8">
+            <p class="text-sm text-neon-blue font-semibold uppercase tracking-wider">Category: AI Basics</p>
+            <h1 class="font-display mt-4 text-3xl md:text-5xl font-bold text-white leading-tight">
+                What Is Artificial Intelligence? A Simple Guide for Beginners
+            </h1>
+            <div class="mt-6 flex items-center gap-4 text-sm text-slate-400">
+                <span class="flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-full bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center text-white font-bold text-xs">AW</span>
+                    By: Admin AI Trends ID
+                </span>
+                <span>&bull;</span>
+                <span>Published: August 10, 2026</span>
+            </div>
+        </header>
+
+        <!-- ================= FEATURED IMAGE ================= -->
+        <figure class="mb-10">
+            <img src="../assets/images/what-is-artificial-intelligence.jpg" alt="Glowing neon brain representing the concept of artificial intelligence"
+                 class="w-full rounded-2xl border border-white/10">
+            <figcaption class="mt-2 text-xs text-slate-500 text-center">Illustrative image - copyright-free.</figcaption>
+        </figure>
+
+        <!-- ================= KONTEN ARTIKEL ================= -->
+        <article class="artikel-konten text-base md:text-lg">
+
+            <p>
+                Artificial intelligence, or AI, is everywhere these days. It recommends the videos you watch, filters
+                spam from your inbox, and powers the virtual assistants on your phone. But what exactly is it? Despite
+                the buzzwords, AI is not magic. It is simply technology that allows computers to perform tasks that
+                normally require human intelligence, such as understanding language, recognizing images, and making
+                decisions. This guide explains AI in plain language, no engineering degree required.
+            </p>
+
+            <h2>AI in Simple Terms</h2>
+            <p>
+                Think of AI as a very fast pattern recognizer. Instead of being programmed with specific rules for every
+                situation, an AI system learns from large amounts of data. The more examples it sees, the better it gets
+                at recognizing patterns and making predictions. That is why AI translation apps improve as you use them,
+                and why voice assistants understand your accent a little better over time.
+            </p>
+
+            <h2>Types of AI You Should Know</h2>
+            <p>
+                Not all AI is the same. It is helpful to understand the three main categories, even at a basic level.
+            </p>
+            <ul>
+                <li><strong>Narrow AI</strong> - AI designed for one specific task, like a spam filter or a chess program. This is the only kind of AI in use today.</li>
+                <li><strong>General AI</strong> - a hypothetical AI that can perform any intellectual task a human can. It does not exist yet.</li>
+                <li><strong>Superintelligent AI</strong> - a future concept of AI that surpasses human intelligence. This remains science fiction for now.</li>
+            </ul>
+
+            <h2>Everyday Examples of AI</h2>
+            <p>
+                You already use AI dozens of times a day, often without realizing it. Here are some common examples:
+            </p>
+            <ul>
+                <li>Video and music recommendations on streaming platforms.</li>
+                <li>Face recognition and photo organization on your smartphone.</li>
+                <li>Spam detection in your email and fraud alerts from your bank.</li>
+                <li>Navigation apps that predict traffic and suggest faster routes.</li>
+                <li>Chatbots that answer questions on websites, including this blog.</li>
+            </ul>
+
+            <h3>Generative AI and Chatbots</h3>
+            <p>
+                One of the most exciting developments in recent years is generative AI. These are systems that create new
+                content instead of simply analyzing existing data. Chatbots like ChatGPT, Claude, and Gemini can write
+                essays, answer questions, and even write code. Image generators can create original pictures from a short
+                text description. This is the type of AI most people mean when they talk about the AI revolution.
+            </p>
+
+            <h2>How AI Actually Works</h2>
+            <p>
+                Behind the scenes, most modern AI relies on a technique called machine learning. Here is the basic idea
+                in three steps:
+            </p>
+            <ul>
+                <li><strong>Data</strong> - the system is fed millions of examples, such as sentences, images, or numbers.</li>
+                <li><strong>Training</strong> - the system adjusts its internal patterns to reduce mistakes until it can perform the task accurately.</li>
+                <li><strong>Prediction</strong> - once trained, the system applies what it learned to new, unseen examples.</li>
+            </ul>
+            <p>
+                You can think of it like learning to ride a bike. You do not memorize a manual; you practice, make small
+                corrections, and gradually improve. AI does the same thing, but with billions of examples and lightning
+                speed.
+            </p>
+
+            <blockquote>
+                "AI is not here to replace thinking. It is a thinking amplifier, available to anyone with a connection."
+            </blockquote>
+
+            <h2>Why AI Matters Now</h2>
+            <p>
+                AI has been studied for decades, but only recently have the tools become fast, cheap, and easy enough for
+                ordinary people to use. Today anyone can access a powerful AI assistant for free. This changes how we
+                work, learn, and create. Understanding AI is no longer a skill for engineers only, it is becoming a basic
+                digital skill for everyone.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+                Artificial intelligence is simply a tool that learns from data to help us do things faster and better.
+                You do not need to understand the mathematics to benefit from it. Start by using one AI tool for a simple
+                task, ask questions, and build your understanding one step at a time. The AI era is already here, and the
+                best way to prepare is to start using it.
+            </p>
+
+        </article>
+
+        <!-- ================= ARTIKEL LAINNYA ================= -->
+        <section class="mt-14 pt-10 border-t border-white/10">
+            <h2 class="font-display text-xl font-bold text-white mb-6">Related Articles</h2>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <a href="machine-learning-explained.html" class="glass-card rounded-xl p-5 group">
+                    <h3 class="font-semibold text-white group-hover:text-neon-blue transition-colors">Machine Learning Explained</h3>
+                    <p class="mt-2 text-sm text-slate-400">Dive deeper into how AI learns.</p>
+                </a>
+                <a href="future-of-ai-predictions.html" class="glass-card rounded-xl p-5 group">
+                    <h3 class="font-semibold text-white group-hover:text-neon-blue transition-colors">The Future of AI: 10 Predictions</h3>
+                    <p class="mt-2 text-sm text-slate-400">Where this technology is heading.</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-white/10 mt-10">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-slate-500">
+                &copy; <span id="tahun"></span> AI Trends ID. Hak cipta dilindungi.
+            </p>
+            <ul class="flex flex-wrap items-center justify-center gap-5 text-sm text-slate-400">
+                <li><a href="../about.html" class="hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="../contact.html" class="hover:text-neon-blue transition-colors">Contact</a></li>
+                <li><a href="../privacy-policy.html" class="hover:text-neon-blue transition-colors">Privacy Policy</a></li>
+                <li><a href="../disclaimer.html" class="hover:text-neon-blue transition-colors">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script Interaksi -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>
